@@ -1,0 +1,258 @@
+1 dzien:
+ctrl alt b = beafutiy
+ctrl / = komentarz
+ctrl u = w chrome podejrzenie kodu
+
+HTML odpowiada za strukture strony, gdy CSS odpowiada za wygląd strony.
+
+2 dzien:
+nav = tworzenie menu
+aside = cos wyodrebionego poza main
+ul = zbiornik/kontener na liste, które są nieponumerowane/nieuporzadkowane
+ol = elementy listy, które są ponumerowane
+li = elementy listy z kropakami
+cltr d = dublowanie 
+div = wyodrebniona część, dział, grupa. Możemy grupować części za pomoca div.
+span = sylowanie tekstu. Odwołuje się do fragmentów, które przypisuje inny wygląd (kolor ect).
+a = hiperłącza
+section = wyodrebniony element strony, który ma znaczenie
+article - kompozycja tekstowa, która składac się z h,a,div ect;
+em = wyróżniona informacja
+strong = ważna informacja
+form = formularze na stronie;
+
+nav>ul>li*5>a = nav z ul, w ktorym jest 5 li posiadajacych a.
+
+Atrybuty:
+<p class ="red"> = klasy uszczególniają znaczniki;
+!Wartość atrybutów piszemy z "x";
+Możemy stworzyć ID tylko jednemu elementowi, natomiast class może sę odwoływać do wielu
+elementów.;
+
+Skróty:
+script-src
+link
+meta-vp
+div.<nazwa klasy>
+
+Narzędzia do Mockupu/Layuotowania = Adobe XD, MockFlow 
+
+
+3 dzień:
+spacja = potomek
+> = dziecko
++ (h1 + p) = pierwszy młodszy brat w tym przypadku to będzie p;
+h1 ~ p {} <- oznacza każdego młodszego brat;
+* <- każdy element na stronie
+.odwolanieDoNazawyKlasy
+#odwolanieDoID
+p.one <- p z klasą one
+
+Selektory muszą mieć małe litery.
+
+selektor {
+właściwość: wartość;
+}
+
+/* komentarz */
+
+
+div div > p {}
+
+p.red.big {} <- weź p, które ma klase red i jednocześnie klase big.
+
+
+
+4 dzien:
+html ma 16px
+
+em - od rodzica
+rem - od html
+20vh - 20% okna przeglądarki
+
+bgc - bacground color
+fz - font size
+color - 
+margin-botton: 
+margin-left:
+margin-right:
+margin-top:
+margin:
+margin: 10px auto; (góra, doł 10px; boki wyśrodkowane)
+
+100vw - 100% procent weight przegladarki
+8vm - 8 % rozmiaru przegladarki
+
+padding (marginest wewnętrzny)
+border (obramownaie)
+border:
+border-color:
+border-top-style:
+
+
+5 dzien:
+Google Fonts - biblioteka fontów;
+
+Dobre fonty: Arial, Verdana, Tahoma, Open Sand, Roboto;
+html { font-family: arial, sans-serif;}
+h1 {font-family: verdana, sans-serif}
+font-weight: bold;
+font-style: italica;
+letter-spacing: 2px; - przerwa między literami;
+word-spacing: 1em - przerwa między słowami
+text-decoration: uderline; - podkreślenie, przekreslienie (td)
+
+<span> - potem modelujemy font;
+
+a:hover {} - pseudo klasa
+
+text-indent: 10px; = wcięcie teksu
+text-align: left/center/jusftfy;
+text-transform: uppercase/caplitalize/lowercase; <- pierwsza literka góa, wszystkie duże, wszystkie małe;
+line-height: 1.5; = wysokosc wiersza, na podstawie fonta;
+vertical-align: 0% (cień tesktu)
+
+
+font: font-style font-weight font-variant font-size/line heights
+font: font-size font-family
+
+font: 20px/140% arial, sans-serif <- font-size/line-height font-style
+
+P:firstchild {
+
+}
+
+p:lastchild {
+}
+
+p.italic+p{} -> mlodszy brat italica
+
+
+templetemonster - stronka;
+awwwards
+pixabay - fotki
+pexelsvideos - filmy
+flaticon - ikonki
+
+word-wrap: break-word; - zawiajanie tesktu
+hypens: auto; - dzielnie lini;
+
+6 dzień:
+Kaskadowość:
+Brazowy - selektor odwołujący się do elementów (znaczników)
+Srebrny: selektor odwujący się do klas np. red{}
+Zloto - selektor odwolujacy sie do identyfikator np #head
+
+p {
+color: red !important
+}
+
+Wazniejsza jest kaskadowosc (dokladna precyzja), niz dziedziczenie.
+
+Reset styli:
+
+* {
+margin : 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+font-family: roboto, arial, sans-serif;
+color: #222;
+font-size: 10px; (font-size: 2rem)
+}
+
+7 dzień:
+Elementy blokowe:
+article
+aside
+div
+form 
+h1... h6
+header
+li
+main
+nav
+ol
+p
+pre
+section
+table 
+ul
+
+Elementy blokowe zaczynaja się od nowej linii.
+Elemety blokowe mają domyślnei 100% szerokości swojego rodzica, natomiast wyokość jest auto, czyli tyle ile potrzebuje. Jak bedzie pusty div to jego dziecko będzie miało również 0 wysokości.
+
+Elementy liniowe: 
+a - hiperlacza
+b - pogrubienie
+em - em faza
+i - kursywa
+img - obrazek
+span - 
+strong - 
+
+display: line - blokuje nam możliwości zmiany;
+Elementy liniowe - bedzie tylko margin, padding, border;
+postion: absolute/fixed = element liniowy staje sie blokowym
+position: static
+
+wielkość/szerokość: auto - nie można zmieniać ich wysokości ręcznie; można jedynie margin-left/maring-right, padding, border;
+
+span{$ tekst}*10
+
+element {
+overflow: hidden; <- kontent nie wyjdzie poza przestrzeń kontentu
+}
+
+min/max-width;
+min/max-height;
+
+W poziomie marginy się sumują, w pionowie sa wybierane największe.
+
+float: left - elementy ustawiają się obok siebie;
+
+box-sizing: content-box; <- content
+box-sizing: boder-box; < obejmuje: content/padding/boder;
+
+display:block;
+display:inline-block;
+display:none;
+border-radius: 20px; zaokraglenie;
+box-shadow:
+
+8dzień:
+nav -> a; <- menu
+a.btn4[#]
+
+
+Zlikiwdowanie odstępów między elemtnami w inline-block za pomocą - rodzic; font-size: 0;
+
+
+a[#]*4
+
+nav>ul>li*4>a[#]{Przycisk $}
+
+list-style: none
+
+9 dzień:
+Definiowanie nawigacji:
+nav > a
+nav > ul > li > a
+
+overflow: hidden
+
+.clearfix::after {
+content: "";
+display: block ;
+clear: both;
+}
+
+nth-child(n)
+li:nth-child(3) {color: yellow;}
+li:nth-child(2n) <- wielokrotność 2, czyli 2,4,6;
+li:nth-child(even) //parzyste
+li:nth-child(odd) //nieparzyste
+
+

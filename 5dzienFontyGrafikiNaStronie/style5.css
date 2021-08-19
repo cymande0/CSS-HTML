@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    line-height: 100vh;
+    /*    padding-top: 50vh;*/
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5vh;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
