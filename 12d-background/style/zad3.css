@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    background-image:
+        url(../zad3KolkoIKrzyzyk/kolko.png),
+        url(../zad3KolkoIKrzyzyk/krzyzyk.png),
+        url(../zad3KolkoIKrzyzyk/krzyzyk.png),
+        url(../zad3KolkoIKrzyzyk/plansza.png);
+
+    background-repeat: no-repeat;
+    background-size: 25% 25%, 25% 25%, 25% 25%, 100% 100%;
+    background-position: 46% center, right 10% top 10%, 90% center, center center;
+
+
+}
