@@ -1,0 +1,25 @@
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+}
+
+.menu_icon {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 40px;
+    color: gray;
+}
+
+.menu_icon:hover .fa-bars {
+    color: black;
+}

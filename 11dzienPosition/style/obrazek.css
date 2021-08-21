@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.sun {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    left: 300px;
+    bottom: 20%;
+    z-index: 2;
+}
+
+div.grass {
+    position: absolute;
+    background-color: green;
+    height: 30vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+div.sky {
+    position: relative;
+    background-color: aqua;
+    height: 100vh;
+    z-index: 1;
+}

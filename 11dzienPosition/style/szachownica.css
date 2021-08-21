@@ -1,14 +1,12 @@
-/*
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
-*/
 
 .board div {
-    /*    float: left;*/
-    display: inline-block;
+    float: left;
+    /*    display: inline-block;*/
     height: 80px;
     width: 80px;
 }
@@ -17,7 +15,7 @@
     width: 400px;
     border: 3px solid black;
     margin: 100px auto 0;
-    font-size: 0px;
+    /*    font-size: 0px;*/
 }
 
 .board div:nth-last-child(even) {
