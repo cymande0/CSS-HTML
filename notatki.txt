@@ -255,4 +255,27 @@ li:nth-child(2n) <- wielokrotność 2, czyli 2,4,6;
 li:nth-child(even) //parzyste
 li:nth-child(odd) //nieparzyste
 
+11 dzień:
+position: absolute;
+position: relative;
+position: fixed;
+
+Fixed:
+top: 200px <- oddalanie, wedlug osi pionoej
+left: <- oddalanie, wedlug osi poziomiej
+bottom: <- liczenie od dołu
+z-index <- ustawienie waznosci warstwy, im wyzsza cyferka tym wazniejszy
+
+Absolute:
+Zostaje na stronie przy scrollowaniu. Wyrzuca element z układu dokumentu.
+Element z poistion: absolute nie jest "wdioczny" dla innych elementów,
+tzn. nie wpływa na nie, a jedynie może je zakryć.
+
+12 dzień:
+background: rgba(0,0,0,0.5) url(obrazek.png) no-repear top left /*bg postiont)*/
+/ cover /*bg size*/ padding-box border-box;
+
+14 dzień:
+360x 640px <- populane
+naprawa gita
 
