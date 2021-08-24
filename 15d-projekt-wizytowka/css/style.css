@@ -13,8 +13,8 @@ sans-serif;
 
 .clearfix::after {
     content: "";
-    clear: both;
     display: block;
+    clear: both;
 }
 
 header {
@@ -86,17 +86,6 @@ header button {
         margin-top: 24px;
         line-height: 40px;
         font-size: 16px;
-    }
-
-    header img {
-        right: -15%;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 375px) {
-
-    header img {
-        right: -20%;
     }
 }
 
@@ -278,7 +267,6 @@ header button {
 
 }
 
-
 @media (min-width: 1024px) {
     header button {
         cursor: pointer;
@@ -296,21 +284,38 @@ section {
     min-height: 30vh;
 }
 
-
-/*1 sekcja*/
+/* Sekcja 1 nasze cechy*/
 
 .features {
     max-width: 1600px;
     margin: 50px auto 0;
     padding: 5%;
     text-align: center;
+
 }
 
 .features h1 {
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Saira Condensed',
+        sans-serif;
     font-size: 26px;
     text-transform: uppercase;
     margin-bottom: 15px;
+
+}
+
+.features h2 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-family: 'Saira',
+        sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px 0;
 }
 
 .features img {
@@ -319,21 +324,7 @@ section {
     max-width: 375px;
 }
 
-.features h2 {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 22px;
-    text-transform: uppercase;
-}
-
-.features p {
-    font-family: 'Saira', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    margin: 20px 0;
-}
-
 @media (min-width:360px) {
-
     .features h1 {
         font-size: 28px;
     }
@@ -347,8 +338,7 @@ section {
     }
 }
 
-@media (orientation:portrait) and (min-width:768px) {
-
+@media (min-width:768px) {
     .features h1 {
         font-size: 36px;
     }
@@ -362,18 +352,22 @@ section {
     }
 }
 
-@media (min-width: 1024px) {
-
+@media (min-width:1024px) {
     .features {
-        margin-top: 10%;
+        margin-top: 50px;
         padding: 5% 2%;
         text-align: center;
+
     }
 
     .feature {
         float: left;
         width: 33%;
-        padding: 30px;
+        padding: 20px;
+    }
+
+    .features h1 {
+        font-size: 36px;
     }
 
     .features h2 {
@@ -387,10 +381,12 @@ section {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width:1600px) {
+
 
     .feature {
-        padding: 20px 40px;
+
+        padding: 20px 50px;
     }
 
     .features h1 {
@@ -398,31 +394,28 @@ section {
     }
 
     .features h2 {
-        font-size: 33px;
+        font-size: 32px;
     }
 
     .features p {
         font-size: 21px;
-        line-height: 160%;
+        line-height: 140%;
         padding: 0 10px;
     }
 }
 
 /* Sekcja 2 */
 
+
 .portfolio {
     background-color: black;
     padding: 10px 0 30px;
 }
 
-.portfolio img {
-    width: 100%;
-}
-
 .portfolio h1 {
-    font-family: 'Saira',
-        sans-serif;
     font-size: 28px;
+    font-family: 'Saira Condensed',
+        sans-serif;
     text-transform: uppercase;
     color: white;
     text-align: center;
@@ -430,14 +423,18 @@ section {
     margin-bottom: 15px;
 }
 
-.portfolio .about {
-    font-family: 'Saira', sans-serif;
-    color: white;
-    font-weight: normal;
-    padding: 10px 20px 20px 0px;
-    text-align: left;
+.portfolio .web img {
+    width: 100%;
 }
 
+.portfolio .about {
+    color: white;
+    font-family: 'Saira',
+        sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+}
 
 .portfolio .about h2 {
     font-size: 18px;
@@ -453,18 +450,41 @@ section {
 }
 
 .portfolio .project {
-    margin-bottom: 20px;
+    max-width: 1400px;
+    margin: 0 auto 20px;
 }
 
-.portfolio .project:nth-of-type(odd) .about {
+.portfolio .project:nth-of-type(odd) {
     background-color: #ff4f2c;
 }
 
-.portfolio .project:nth-of-type(even) .about {
+.portfolio .project:nth-of-type(even) {
     background-color: #29a6dc;
 }
 
-@media (orientation:landscape) {
+@media (min-width:768px) {
+
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (orientation: landscape) {
 
     .web,
     .about {
@@ -475,4 +495,69 @@ section {
     .web img {
         display: block;
     }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+
+    }
+
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 40px;
+    }
+
+
 }
+
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 50px;
+        font-size: 28px;
+        text-indent: 40px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+        line-height: 180%;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
