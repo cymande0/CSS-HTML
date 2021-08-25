@@ -636,3 +636,110 @@ footer {
         font-size: 26px;
     }
 }
+
+
+/*Sekcja 4 - hobby*/
+
+.hobby h1 {
+    font-family: 'Saira', sans-serif;
+    padding: 20px 0;
+    font-size: 36px;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hobby .item {
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1924px;
+    margin: 0 auto;
+}
+
+.hobby .item p {
+    font-family: 'Saira', sans-serif;
+    color: white;
+    text-align: center;
+    /*    line-height: 25vh;*/
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    page-break-after: 5px 0;
+
+}
+
+.hobby .item:nth-last-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .item:nth-last-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .item:nth-last-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .item:nth-last-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+@media(min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+
+@media(min-width: 768px) {
+    .hobby h1 {
+        font-size: 48px;
+        margin-bottom: 35px;
+        margin-top: 40px;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .hobby .item {
+        transition: 1s;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item:hover {
+        background-size: 120%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hobby h1 {
+        font-size: 60px;
+        margin-bottom: 50px;
+        margin-top: 45px;
+    }
+
+    .hobby .item p {
+        font-size: 40px;
+    }
+}
